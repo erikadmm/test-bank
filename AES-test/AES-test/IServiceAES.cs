@@ -13,6 +13,9 @@ namespace AES_test
     {
         [OperationContract]
         string GetDecryption(string inputMessage, string iv, string pass);
+
+        [OperationContract]
+        Dictionary<string, string> GetEncryption(string inputMessage, string pass);
     }
 
 }

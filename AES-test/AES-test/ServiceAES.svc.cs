@@ -32,5 +32,34 @@ namespace AES_test
                 return e.Message;
             }
         }
+
+        public Dictionary<string, string> GetEncryption(string inputMessage, string pass)
+        {
+            Dictionary<string, string> response = new Dictionary<string, string>();
+            try
+            {
+                var AES = new System.Security.Cryptography.RijndaelManaged();
+                System.Security.Cryptography.ICryptoTransform Encryptor;
+
+                var Buffer = Convert.FromBase64String(inputMessage);
+                AES.Mode = System.Security.Cryptography.CipherMode.CBC;
+                AES.Padding = System.Security.Cryptography.PaddingMode.PKCS7;
+                AES.Key = Convert.FromBase64String(pass);
+                AES.GenerateIV();
+                Encryptor = AES.CreateEncryptor();
+                var plaintext = Encryptor.TransformFinalBlock(Buffer, 0, Buffer.Length);
+
+                response.Add("Data", Convert.ToBase64String(plaintext));
+                response.Add("IV", Convert.ToBase64String(AES.IV));
+                response.Add("Key", Convert.ToBase64String(AES.Key));
+            }
+            catch (Exception e)
+            {
+                response.Add("Error message", e.Message);
+            }
+
+            return response;
+        }
+
     }
 }
