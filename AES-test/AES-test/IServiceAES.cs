@@ -12,10 +12,11 @@ namespace AES_test
     public interface IServiceAES
     {
         [OperationContract]
-        string GetDecryption(string inputMessage, string iv, string pass);
+        Dictionary<string, string> GetEncryption(string inputMessage, string pass);
 
         [OperationContract]
-        Dictionary<string, string> GetEncryption(string inputMessage, string pass);
+        string GetDecryption(string inputMessage, string iv, string pass);
+
     }
 
 }

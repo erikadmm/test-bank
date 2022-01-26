@@ -5,3 +5,10 @@ C:\Users\ErikaMartinezMendez\Documents\test-bank\AES-test\AES-test\obj\Debug\AES
 C:\Users\ErikaMartinezMendez\Documents\test-bank\AES-test\AES-test\obj\Debug\AES-test.csproj.CoreCompileInputs.cache
 C:\Users\ErikaMartinezMendez\Documents\test-bank\AES-test\AES-test\obj\Debug\AES-test.dll
 C:\Users\ErikaMartinezMendez\Documents\test-bank\AES-test\AES-test\obj\Debug\AES-test.pdb
+C:\Work\test-bank\AES-test\AES-test\bin\AES-test.dll.config
+C:\Work\test-bank\AES-test\AES-test\bin\AES-test.dll
+C:\Work\test-bank\AES-test\AES-test\bin\AES-test.pdb
+C:\Work\test-bank\AES-test\AES-test\obj\Debug\AES-test.csproj.AssemblyReference.cache
+C:\Work\test-bank\AES-test\AES-test\obj\Debug\AES-test.csproj.CoreCompileInputs.cache
+C:\Work\test-bank\AES-test\AES-test\obj\Debug\AES-test.dll
+C:\Work\test-bank\AES-test\AES-test\obj\Debug\AES-test.pdb
